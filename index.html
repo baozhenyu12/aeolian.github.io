@@ -11,7 +11,7 @@
 				if(count > 0){
 					dong = count/1000/60;
 				}else{
-					dong = new Date() + '徐文辉 下班啦！';
+					dong = (new Date()).toLocaleDateString(). + '徐文辉 下班啦！';
 					clearInterval(timer);
 				}
 				document.getElementById("timerSeconds").innerHTML = dong ;
